@@ -7,7 +7,7 @@ import { MainService } from 'src/app/services/main.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(public mainSerivce: MainService ) { }
+  constructor(public mainService: MainService ) { }
 
   ngOnInit(): void {
   }
