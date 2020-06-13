@@ -8,10 +8,11 @@ import { MainService } from 'src/app/services/main.service';
 export class ProductsComponent implements OnInit {
 
   constructor(public mainService: MainService) { }
-  addToCart(product){
-    this.mainService.cart.push(( product ));
+  addToCart(product) {
+    this.mainService.cart.push((product));
     console.log('Dodano do koszyka: ');
     console.log(product);
+    console.log(this.mainService.cart);
   }
 
 
@@ -19,7 +20,7 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getProducts(){
+  getProducts() {
     this.mainService.getProducts(this.mainService.productsRequest);
   }
 

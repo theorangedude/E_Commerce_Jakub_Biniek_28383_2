@@ -1,21 +1,22 @@
 <app-panel-top></app-panel-top>
-<div class="products"><table style="margin:0 auto;" id="cartTable">
-  <thead *ngIf="this.mainService.products">
-    <tr>
-      <th>obrazek</th>
-      <th>dane</th>
-    </tr>
-  </thead>
-  <tbody>
-    <ng-container *ngFor="let object of this.mainService.cart">
-      <tr style="background-color: whitesmoke;">
-        <td>
-          <img src="{{object.product.thumbnail}}" alt=""></td>
+<div class="products">
+  <table style="margin:0 auto;" id="cartTable">
+    <thead *ngIf="this.mainService.products">
+      <tr>
+        <th>obrazek</th>
+        <th>dane</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let product of this.mainService.cart">
+        <tr style="background-color: whitesmoke;">
+          <td>
+            <img src="{{product.thumbnail}}" alt=""></td>
           <td>
             <ul>
-              <li>Tytuł: {{object.product.title}}</li>
-              <li>Cena: {{object.product.price}}</li>
-              <li>Kategoria: {{object.product.category}}</li>
+              <li>Tytuł: {{product.title}}</li>
+              <li>Cena: {{product.price}}</li>
+              <li>Kategoria: {{product.category}}</li>
             </ul>
           </td>
         </tr>

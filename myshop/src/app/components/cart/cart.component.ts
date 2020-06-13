@@ -13,8 +13,8 @@ export class CartComponent implements OnInit {
   }
   getCartPrice() {
     let price = 0;
-    for (const object of this.mainService.cart) {
-      price += parseFloat(object.product.price);
+    for (const product of this.mainService.cart) {
+      price += parseFloat(product.price);
     }
     return price;
   }

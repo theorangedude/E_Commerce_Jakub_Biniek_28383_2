@@ -1,9 +1,11 @@
-<app-panel-top></app-panel-top>
+<div id="panelglowny">
+  <app-panel-top></app-panel-top>
+  <button id="b1" routerLink="/landing">POWRÓT DO STRONY GŁÓWNEJ</button>
+</div>
 
-<button routerLink="/landing">Powrót</button>
 
 <div class="products">
-    <table style="margin:0 auto;">
+    <table id="tab1">
         <thead nglf="this.mainService.pdocucts">
             <tr>
                 <th>obrazek</th>
@@ -12,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-          <ng-container *ngFor="let product of this.mainService.products?.productsTable">
+          <ng-container id="gry" *ngFor="let product of this.mainService.products?.productsTable">
             <tr style="background-color: whitesmoke;">
               <td>
                 <img src="{{product.thumbnail}}" alt=""></td>

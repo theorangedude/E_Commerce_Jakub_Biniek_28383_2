@@ -1,9 +1,9 @@
-<div>
+<div id="panelglowny">
     <div style="display: flex;flex-direction: row;">
-        <img src="https://via.placeholder.com/100" alt="">
-        <h2>Sklep z softłerem</h2>
+        <img src="https://images.squarespace-cdn.com/content/v1/5be32a3f5cfd79014be8d490/1543205051514-34LB1L2TP3WY1EIPT67K/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7UnCxNA8dHvmd7460Z7fbKFSZnIIAPuX1C4iUTyn4Xd4-76gsgk4xgxAaWTBSRHt9w/gaming-computer-upgrades-console-installation.png" alt="">
+        <h2>OrangeStore</h2>
     </div>
-    <button routerLink="/adm_dashboard">Panel Administracyjny</button>
+    <button id="b1" routerLink="/adm_dashboard">Panel Administracyjny</button>
     <div style="display: flex; justify-content: center;">
         <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
         <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>

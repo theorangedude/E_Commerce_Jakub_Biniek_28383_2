@@ -20,4 +20,9 @@ newProduct = {
 getProducts(){
 this.mainService.getProducts(this.mainService.productsRequest);
 }
+
+
+
+
+
 }
